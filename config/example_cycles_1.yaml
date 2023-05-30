@@ -1,0 +1,14 @@
+hydra_base_dir : " "
+seed : 0
+n_agent : 2
+exp2 : False
+unif_init : False
+distribution: "Bernoulli"
+network:
+  nodes_nbr: 3
+  edges:
+    "0": [0,1] # Convention "EdgeNumber": [Parent Node, Child Node]
+    "1": [1,2]
+    "2": [1,0]
+    "3": [2,1]
+    "4": [0,2]   
